@@ -14,10 +14,10 @@ export default class RegisterClass extends Component {
   onSubmit() {
     Alert.alert(
       'Veuillez Confirmer',
-      "Si l'information fournée est correcte, sélectionner « Oui ». Sinon, sélectionner « Non ».",
+      "Êtes-vous sûr de vouloir soumettre les informations fournies?",
       [
-        {text: 'Non'},
-        {text: 'Oui'}
+        {text: 'Annuler'},
+        {text: 'Confirmer'}
       ]
     )
   }

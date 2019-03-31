@@ -12,15 +12,15 @@ export default class Home extends Component {
         <View>
         <Button
           title='Étudiant.e'
-          onPress={() => navigate('StudentLogin')}
+          onPress={() => navigate('StudentStart')}
         />
         <Button
           title='Professeur.e'
-          onPress={() => navigate('ProfLogin')}
+          onPress={() => navigate('ProfStart')}
         />
         <Button
           title='Organisateur/Organisatrice'
-          onPress={() => navigate('OrgLogin')}
+          onPress={() => navigate('OrgStart')}
         />
       </View>
     </View>

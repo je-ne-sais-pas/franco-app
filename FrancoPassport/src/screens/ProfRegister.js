@@ -5,7 +5,7 @@ export default class StudentRegister extends Component {
   render() {
     return (
       <View>
-        <Text>Register Student</Text>
+        <Text>Register Prof</Text>
       </View>
     );
   }

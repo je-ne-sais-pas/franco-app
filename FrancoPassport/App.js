@@ -15,6 +15,7 @@ import LoginHome from './src/screens/LoginHome';
 import OrgRegister from './src/screens/OrgRegister';
 import OrgLogin from './src/screens/OrgLogin';
 import OrgProfile from './src/screens/OrgProfile';
+import OrgStart from './src/screens/OrgStart'
 import AddEvent from './src/screens/AddEvent';
 
 // Campaign specific screens
@@ -28,11 +29,13 @@ import AddQuest from './src/screens/AddQuest';
 import StudentLogin from './src/screens/StudentLogin';
 import StudentProfile from './src/screens/StudentProfile'
 import StudentRegister from './src/screens/StudentRegister'
+import StudentStart from './src/screens/StudentStart'
 
 // Prof specific screens
 import ProfLogin from './src/screens/ProfLogin';
 import ProfProfile from './src/screens/ProfProfile'
 import ProfRegister from './src/screens/ProfRegister'
+import ProfStart from './src/screens/ProfStart'
 
 // Event specific screens
 import EventDetails from './src/screens/EventDetails';
@@ -42,12 +45,15 @@ const AppNavigator = createStackNavigator({
   StudentLogin: { screen: StudentLogin},
   StudentRegister: { screen: StudentRegister},
   StudentProfile: { screen: StudentProfile},
+  StudentStart: { screen: StudentStart},
   ProfLogin: { screen: ProfLogin},
   ProfRegister: { screen: ProfRegister},
   ProfProfile: { screen: ProfProfile},
+  ProfStart: { screen: ProfStart},
   OrgLogin: { screen: OrgLogin },
   OrgRegister: {screen: OrgRegister},
   OrgProfile: { screen: OrgProfile},
+  OrgStart: { screen: OrgStart},
   AddEvent: { screen: AddEvent},
   EventDetails: { screen: EventDetails},
   CampaignList: { screen: CampaignList},

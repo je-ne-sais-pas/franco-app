@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, TextInput, Button, Alert } from 'react-native';
 
-export default class StudentRegister extends Component {
+export default class OrgRegister extends Component {
   // TODO - styles
   constructor(props) {
     super(props);
@@ -14,7 +14,7 @@ export default class StudentRegister extends Component {
       "Si l'information fournée est correcte, sélectionner « Oui ». Sinon, sélectionner « Non ».", // message
       [
         {text: 'Non'},
-        {text: 'Oui'}
+        {text: 'Oui', onPress: () => this.props.navigation.navigate('OrgProfile')}
       ]
     )
   }

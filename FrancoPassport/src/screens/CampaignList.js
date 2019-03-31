@@ -1,5 +1,6 @@
 import React, { Component } from 'react';  
 import { View, Text, Button } from 'react-native';
+import { Footer, FooterTab, Icon } from 'native-base';
 
 export default class CampaignList extends Component {  
   render() {
@@ -15,6 +16,20 @@ export default class CampaignList extends Component {
           color="green"
           onPress={() => this.props.navigation.navigate('AddCampaign')}
         />
+        <Footer >
+          <FooterTab>
+            <Button 
+              title="Profile"
+              onPress={() => this.props.navigation.navigate('OrgProfile')}>
+              <Icon name="person" />
+            </Button>
+            <Button
+              active 
+              title="Campaigns">
+              <Icon active name="apps" />
+            </Button>
+          </FooterTab>
+        </Footer>      
       </View>
     );
   }

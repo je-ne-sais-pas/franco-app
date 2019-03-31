@@ -6,7 +6,7 @@ export default class StudentProfile extends Component {
     return (
       <View>
         <Text>List of Events</Text>
-      </View>
+    </View>
     );
   }
 }

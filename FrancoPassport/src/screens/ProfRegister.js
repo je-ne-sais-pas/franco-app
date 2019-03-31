@@ -14,7 +14,7 @@ export default class StudentRegister extends Component {
       "Si l'information fournée est correcte, sélectionner « Oui ». Sinon, sélectionner « Non ».", // message
       [
         {text: 'Non'},
-        {text: 'Oui'}
+        {text: 'Oui', onPress: () => this.props.navigation.navigate('CreateClass')}
       ]
     )
   }

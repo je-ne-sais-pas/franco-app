@@ -28,9 +28,17 @@ import AddQuest from './src/screens/AddQuest';
 import EventDetails from './src/screens/EventDetails';
 
 const AppNavigator = createStackNavigator({  
-  LoginHome: {
-    screen: LoginHome
-  }
+  LoginHome: { screen: LoginHome },
+  OrgLogin: { screen: OrgLogin },
+  OrgRegister: {screen: OrgRegister},
+  OrgProfile: { screen: OrgProfile},
+  AddEvent: { screen: AddEvent},
+  EventDetails: { screen: EventDetails},
+  CampaignList: { screen: CampaignList},
+  CampaignDetails: { screen: CampaignDetails},
+  AddCampaign: { screen: AddCampaign },
+  QuestDetails: { screen: QuestDetails},
+  AddQuest: { screen: AddQuest},
 });
 
 const AppContainer = createAppContainer(AppNavigator);

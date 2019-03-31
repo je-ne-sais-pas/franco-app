@@ -11,11 +11,11 @@ export default class Home extends Component {
         <Text> Êtes-vous...</Text>
         <View>
         <Button
-          title='Étudiant.e'
+          title='Étudiant(e)'
           onPress={() => navigate('StudentStart')}
         />
         <Button
-          title='Professeur.e'
+          title='Professeur(e)'
           onPress={() => navigate('ProfStart')}
         />
         <Button

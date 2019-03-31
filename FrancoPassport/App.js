@@ -8,42 +8,35 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import {createStackNavigator, createAppContainer} from 'react-navigation';
+import LoginHome from './src/screens/LoginHome';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
+// Organization specific screens
+import OrgRegister from './src/screens/OrgRegister';
+import OrgLogin from './src/screens/OrgLogin';
+import OrgProfile from './src/screens/OrgProfile';
+import AddEvent from './src/screens/AddEvent';
+
+// Campaign specific screens
+import CampaignDetails from './src/screens/CampaignDetails';
+import CampaignList from './src/screens/CampaignList';
+import AddCampaign from './src/screens/AddCampaign';
+import QuestDetails from './src/screens/QuestDetails';
+import AddQuest from './src/screens/AddQuest';
+
+// Event specific screens
+import EventDetails from './src/screens/EventDetails';
+
+const AppNavigator = createStackNavigator({  
+  LoginHome: {
+    screen: LoginHome
+  }
 });
 
-type Props = {};
-export default class App extends Component<Props> {
+const AppContainer = createAppContainer(AppNavigator);
+
+export default class App extends Component {  
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    );
+    return <AppContainer />;
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});

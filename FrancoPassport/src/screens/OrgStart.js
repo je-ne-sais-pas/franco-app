@@ -5,6 +5,7 @@ export default class OrgStart extends Component {
   render() {
     return (
       <View>
+        <Text>Organisation</Text>
         <Button
           title='Se Connecter'
           onPress={()=>this.props.navigation.navigate('OrgLogin')}

@@ -5,6 +5,7 @@ export default class StudentStart extends Component {
   render() {
     return (
       <View>
+        <Text>Étudiant.e</Text>
         <Button
           title='Se Connecter'
           onPress={()=>this.props.navigation.navigate('StudentLogin')}

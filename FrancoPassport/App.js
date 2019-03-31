@@ -30,6 +30,7 @@ import StudentLogin from './src/screens/StudentLogin';
 import StudentProfile from './src/screens/StudentProfile'
 import StudentRegister from './src/screens/StudentRegister'
 import StudentStart from './src/screens/StudentStart'
+import RegisterClass from './src/screens/RegisterClass'
 
 // Prof specific screens
 import ProfLogin from './src/screens/ProfLogin';
@@ -46,6 +47,7 @@ const AppNavigator = createStackNavigator({
   StudentRegister: { screen: StudentRegister},
   StudentProfile: { screen: StudentProfile},
   StudentStart: { screen: StudentStart},
+  RegisterClass: { screen: RegisterClass},
   ProfLogin: { screen: ProfLogin},
   ProfRegister: { screen: ProfRegister},
   ProfProfile: { screen: ProfProfile},

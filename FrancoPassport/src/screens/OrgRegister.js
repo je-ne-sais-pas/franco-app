@@ -42,6 +42,7 @@ export default class StudentRegister extends Component {
         <TextInput
           placeholder='Mot de Passe'
           onChangeText={(text) => this.setState({text})}
+          secureTextEntry={true}
         />
       <Text>Biographie</Text>
         <TextInput

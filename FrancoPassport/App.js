@@ -38,6 +38,10 @@ import ProfProfile from './src/screens/ProfProfile'
 import ProfRegister from './src/screens/ProfRegister'
 import ProfStart from './src/screens/ProfStart'
 
+// Class specific screens
+import CreateClass from './src/screens/CreateClass'; 
+import ClassDetails from './src/screens/ClassDetails';
+
 // Event specific screens
 import EventDetails from './src/screens/EventDetails';
 
@@ -63,6 +67,8 @@ const AppNavigator = createStackNavigator({
   AddCampaign: { screen: AddCampaign },
   QuestDetails: { screen: QuestDetails},
   AddQuest: { screen: AddQuest},
+  CreateClass: { screen: CreateClass},
+  ClassDetails: { screen: ClassDetails},
 });
 
 const AppContainer = createAppContainer(AppNavigator);

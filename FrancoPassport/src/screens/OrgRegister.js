@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, TextInput, Button, Alert } from 'react-native';
 
-export default class StudentRegister extends Component {
+export default class OrgRegister extends Component {
   // TODO - styles
   // TODO - backend
   constructor(props) {
@@ -21,7 +21,7 @@ export default class StudentRegister extends Component {
       "Êtes-vous sûr de vouloir soumettre les informations fournies?", // message
       [
         {text: 'Non'},
-        {text: 'Oui'}
+        {text: 'Oui', onPress: () => this.props.navigation.navigate('OrgProfile')}
       ]
     )
   }

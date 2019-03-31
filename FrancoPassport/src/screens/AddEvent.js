@@ -1,13 +1,12 @@
-import React, { Component } from 'react';  
+import React, { Component } from 'react';
 import { View, Text, Button } from 'react-native';
 
-export default class AddEvent extends Component {  
+export default class AddEvent extends Component {
   render() {
     return (
       <View>
-        <Text>Add Event</Text>
         <Button
-          title="Create"
+          title="Créer"
           color="green"
           onPress={() => this.props.navigation.navigate('OrgProfile')}
         />

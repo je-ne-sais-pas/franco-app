@@ -6,7 +6,7 @@ export default class StudentLogin extends Component {
     return (
       <View>
         <View>
-          <Text> Student Login </Text>
+          <Text> Se connecter </Text>
         </View>
       </View>
     );

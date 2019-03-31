@@ -2,28 +2,27 @@ import React, { Component } from 'react';
 import { View, Text, Button } from 'react-native';
 import { Footer, FooterTab, Icon } from 'native-base';
 
-export default class ProfProfile extends Component {  
+export default class ProfProfile extends Component {
   render() {
     return (
       <View>
-        <Text>List of Classes</Text>
         <Button
-          title="Class"
+          title="Classe"
           onPress={() => this.props.navigation.navigate('ClassDetails')}
         />
         <Button
-          title="New Class"
+          title="Nouvelle classe"
           color="green"
           onPress={() => this.props.navigation.navigate('CreateClass')}
         />
         <Footer >
           <FooterTab>
-            <Button 
+            <Button
               active
               title="Profile">
               <Icon active name="person" />
             </Button>
-            <Button 
+            <Button
               title="Campaigns"
               onPress={() => this.props.navigation.navigate('CampaignList')}>
               <Icon name="apps" />

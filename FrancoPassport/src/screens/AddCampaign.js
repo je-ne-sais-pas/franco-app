@@ -1,11 +1,16 @@
 import React, { Component } from 'react';  
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 
-export default class AddItem extends Component {  
+export default class AddCampaign extends Component {  
   render() {
     return (
       <View>
         <Text>Add Campaign</Text>
+        <Button
+          title="Create"
+          color="green"
+          onPress={() => this.props.navigation.navigate('CampaignList')}
+        />
       </View>
     );
   }

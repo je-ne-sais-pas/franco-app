@@ -38,27 +38,23 @@ import ProfRegister from './src/screens/ProfRegister'
 import EventDetails from './src/screens/EventDetails';
 
 const AppNavigator = createStackNavigator({
-  LoginHome: {
-    screen: LoginHome
-  },
-  StudentLogin: {
-    screen: StudentLogin
-  },
-  StudentRegister: {
-    screen: StudentRegister
-  },
-  StudentProfile: {
-    screen: StudentProfile
-  },
-  ProfLogin: {
-    screen: ProfLogin
-  },
-  ProfRegister: {
-    screen: ProfRegister
-  },
-  ProfProfile: {
-    screen: ProfProfile
-  },
+  LoginHome: { screen: LoginHome},
+  StudentLogin: { screen: StudentLogin},
+  StudentRegister: { screen: StudentRegister},
+  StudentProfile: { screen: StudentProfile},
+  ProfLogin: { screen: ProfLogin},
+  ProfRegister: { screen: ProfRegister},
+  ProfProfile: { screen: ProfProfile},
+  OrgLogin: { screen: OrgLogin },
+  OrgRegister: {screen: OrgRegister},
+  OrgProfile: { screen: OrgProfile},
+  AddEvent: { screen: AddEvent},
+  EventDetails: { screen: EventDetails},
+  CampaignList: { screen: CampaignList},
+  CampaignDetails: { screen: CampaignDetails},
+  AddCampaign: { screen: AddCampaign },
+  QuestDetails: { screen: QuestDetails},
+  AddQuest: { screen: AddQuest},
 });
 
 const AppContainer = createAppContainer(AppNavigator);

@@ -24,18 +24,46 @@ import AddCampaign from './src/screens/AddCampaign';
 import QuestDetails from './src/screens/QuestDetails';
 import AddQuest from './src/screens/AddQuest';
 
+// Student specific screens
+import StudentLogin from './src/screens/StudentLogin';
+import StudentProfile from './src/screens/StudentProfile'
+import StudentRegister from './src/screens/StudentRegister'
+
+// Prof specific screens
+import ProfLogin from './src/screens/ProfLogin';
+import ProfProfile from './src/screens/ProfProfile'
+import ProfRegister from './src/screens/ProfRegister'
+
 // Event specific screens
 import EventDetails from './src/screens/EventDetails';
 
-const AppNavigator = createStackNavigator({  
+const AppNavigator = createStackNavigator({
   LoginHome: {
     screen: LoginHome
-  }
+  },
+  StudentLogin: {
+    screen: StudentLogin
+  },
+  StudentRegister: {
+    screen: StudentRegister
+  },
+  StudentProfile: {
+    screen: StudentProfile
+  },
+  ProfLogin: {
+    screen: ProfLogin
+  },
+  ProfRegister: {
+    screen: ProfRegister
+  },
+  ProfProfile: {
+    screen: ProfProfile
+  },
 });
 
 const AppContainer = createAppContainer(AppNavigator);
 
-export default class App extends Component {  
+export default class App extends Component {
   render() {
     return <AppContainer />;
   }

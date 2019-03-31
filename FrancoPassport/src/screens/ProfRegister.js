@@ -5,16 +5,22 @@ export default class StudentRegister extends Component {
   // TODO - styles
   constructor(props) {
     super(props);
-    this.state = {text: ''};
+    this.state = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      password: '',
+      description: ''
+    };
     this.onSubmit = this.onSubmit.bind(this);
   }
   onSubmit() {
     Alert.alert(
       'Veuillez Confirmer', // title
-      "Si l'information fournée est correcte, sélectionner « Oui ». Sinon, sélectionner « Non ».", // message
+      "Êtes-vous sûr de vouloir soumettre les informations fournies?",
       [
-        {text: 'Non'},
-        {text: 'Oui'}
+        {text: 'Annuler'},
+        {text: 'Confirmer'}
       ]
     )
   }
@@ -26,28 +32,28 @@ export default class StudentRegister extends Component {
         <Text>Prènom</Text>
         <TextInput
           placeholder='Prénom'
-          onChangeText={(text) => this.setState({text})}
+          onChangeText={(text) => this.setState({firstName: text})}
         />
       <Text>Nom de Famille</Text>
         <TextInput
           placeholder='Nom de Famille'
-          onChangeText={(text) => this.setState({text})}
+          onChangeText={(text) => this.setState({lastName: text})}
         />
       <Text>Courriel</Text>
         <TextInput
           placeholder='Courriel'
-          onChangeText={(text) => this.setState({text})}
+          onChangeText={(text) => this.setState({email: text})}
         />
       <Text>Mot de Passe</Text>
         <TextInput
           placeholder='Mot de Passe'
-          onChangeText={(text) => this.setState({text})}
+          onChangeText={(text) => this.setState({password: text})}
           secureTextEntry={true}
         />
       <Text>Biographie</Text>
         <TextInput
           placeholder='Biographie (140 caractères)'
-          onChangeText={(text) => this.setState({text})}
+          onChangeText={(text) => this.setState({description: text})}
         />
       <Button
         title="Soumettre"
